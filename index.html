@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainha dos Pés Grandes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Rainha dos Pés Grandes</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#amostra">Coleção</a></li>
+                    <li><a href="#clube">Clube das Rainhas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-carousel">
+        <div class="carousel">
+            <img src="img/img1.jpg" class="active" />
+            <img src="img/img2.jpg" />
+            <img src="img/img3.jpg" />
+            <img src="img/img4.jpg" />
+            <img src="img/logo.png" />
+        </div>
+        <div class="carousel-text">
+            <h2>Beleza em cada passo</h2>
+            <p>Calçados femininos para quem calça acima do 40</p>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>A Rainha dos Pés Grandes nasceu para valorizar mulheres com pés maiores. Nossa missão é oferecer calçados confortáveis, estilosos e acessíveis do número 40 ao 45.</p>
+        </div>
+    </section>
+
+    <section id="amostra" class="produtos">
+        <div class="container">
+            <h2>Modelos em Destaque</h2>
+            <div class="galeria">
+
+                <div class="item">
+                    <img src="img/img1.jpg" alt="Modelo 1" onclick="mostrarDetalhes(1)" />
+                    <p>Modelo 1</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/img2.jpg" alt="Modelo 2" onclick="mostrarDetalhes(2)" />
+                    <p>Modelo 2</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/img3.jpg" alt="Modelo 3" onclick="mostrarDetalhes(3)" />
+                    <p>Modelo 3</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/img4.jpg" alt="Modelo 4" onclick="mostrarDetalhes(4)" />
+                    <p>Modelo 4</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/img5.jpg" alt="Modelo 5" onclick="mostrarDetalhes(5)" />
+                    <p>Modelo 5</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/img6.jpg" alt="Modelo 6" onclick="mostrarDetalhes(6)" />
+                    <p>Modelo 6</p>
+                </div>
+            </div>
+            <p style="text-align:center; margin-top: 2rem;">
+                <a href="colecao.html" class="ver-mais">Ver coleção completa</a>
+            </p>
+        </div>
+    </section>
+
+    <section id="clube" class="clube">
+        <div class="container">
+            <h2>Clube das Rainhas</h2>
+            <p>Seja parte do nosso clube exclusivo! Descubra lançamentos em primeira mão, receba cupons de desconto e encomende calçados sob medida.</p>
+            <h3>Faça sua Encomenda</h3>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="pedido">Encomenda ou Sugestão:</label><br>
+                <textarea id="pedido" name="pedido" rows="4" required></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Email: contato@rainhadospesgrandes.com.br</p>
+            <p>Instagram: @rainhadospesgrandes</p>
+        </div>
+    </section>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="fecharPopup()">&times;</span>
+            <h3>Numeração disponível</h3>
+            <p>Disponível do número 40 ao 45.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Rainha dos Pés Grandes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
